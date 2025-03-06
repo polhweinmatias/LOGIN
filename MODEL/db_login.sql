@@ -1,1 +1,15 @@
 CREATE DATABASE IF NOT EXISTS LOGIN;
+USE LOGIN;
+
+CREATE TABLE IF NOT EXISTS USUARIOS(
+     id_usuario INT PRIMARY KEY AUTO_INCREMENT,
+     USUARIO VARCHAR(30),
+     EMAIL VARCHAR(30),
+     CONTRASENA VARCHAR(64),
+     FECHA_NACIMIENTO DATE,
+     usuario_activo BOOLEAN
+);
+
+
+#codigo para pruebas en caso de nesesidad de borrar base de datos
+#DROP DATABASE login;
